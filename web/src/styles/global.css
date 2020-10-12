@@ -6,7 +6,8 @@
 
 body {
   color: #fff;
-  background: #ebf2f5;
+  /* background: #5173a0; */
+  background: linear-gradient(#83c5be, #aed9e0);
 }
 
 body, input, button, textarea {
