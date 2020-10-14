@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiArrowRight } from 'react-icons/fi';
+import { FiArrowRight, FiInfo } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import logo from '../../images/logo.svg';
@@ -20,12 +20,15 @@ const Landing: React.FC = () => {
           </p>
         </main>
 
-        <div className="location">
-          <strong>Curitiba</strong>
-          <span>Paraná</span>
+        <div className="about">
+          <Link to="/about">
+            Sobre o happy
+            <FiInfo size={20} />
+          </Link>
         </div>
 
         <Link to="/map" className="enter-app">
+          Procurar projetos
           <FiArrowRight size={26} />
         </Link>
       </Content>

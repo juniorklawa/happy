@@ -44,22 +44,30 @@ export const Content = styled.div`
     line-height: 34px;
   }
 
-  .location {
+  .about {
     position: absolute;
     right: 0;
     top: 0;
+    margin-top: 32px;
+    margin-right: 40px;
 
-    font-size: 24px;
+    font-size: 18px;
     line-height: 34px;
 
-    display: flex;
-    flex-direction: column;
-
     text-align: right;
-  }
 
-  .location strong {
-    font-weight: 800;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-decoration: none;
+      color: #fff;
+
+      svg {
+        margin-left: 8px;
+      }
+    }
   }
 
   .enter-app {
@@ -67,7 +75,7 @@ export const Content = styled.div`
     right: 0;
     bottom: 0;
 
-    width: 80px;
+    width: 250px;
     height: 80px;
     background: #fff;
     border-radius: 30px;
@@ -76,19 +84,41 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
 
-    transition: background-color 0.2s;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+
+    transition: all 0.2s;
 
     svg {
       color: rgba(0, 0, 0, 0.6);
       transition: color 0.2s;
+
+      margin-left: 24px;
+    }
+  }
+
+  @keyframes moveArrow {
+    25% {
+      transform: translateX(8px);
+    }
+    50% {
+      transform: translateX(0px);
+    }
+    75% {
+      transform: translateX(8px);
+    }
+    100% {
+      transform: translateX(0px);
     }
   }
 
   .enter-app:hover {
     background: #3d5a80;
+    color: white;
 
     svg {
       color: white;
+      animation: moveArrow 0.5s;
     }
   }
 `;
