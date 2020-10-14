@@ -4,6 +4,6 @@ import projectsRouter from './projects.routes';
 
 const routes = Router();
 
-routes.use('/projects', projectsRouter)
+routes.use('/projects', projectsRouter);
 
 export default routes;
