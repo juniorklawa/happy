@@ -11,7 +11,7 @@ export const Content = styled.div`
   display: flex;
 
   aside {
-    width: 440px;
+    width: 420px;
     padding: 80px;
 
     display: flex;
@@ -22,12 +22,34 @@ export const Content = styled.div`
       font-size: 40px;
       font-weight: 800;
       line-height: 42px;
-      margin-top: 64px;
+      margin-top: 48px;
     }
 
     p {
       line-height: 28px;
       margin-top: 24px;
+    }
+
+    .enter-projects-list {
+      width: 280px;
+      height: 64px;
+      background: #fff;
+      border-radius: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 64px;
+
+      color: rgba(0, 0, 0, 0.6);
+      text-decoration: none;
+
+      transition: all 0.2s;
+    }
+
+    .enter-projects-list:hover {
+      background: #3d5a80;
+      color: white;
     }
 
     footer {
@@ -65,7 +87,19 @@ export const Content = styled.div`
     transition: background-color 0.2s;
   }
 
+  @keyframes movePlus {
+    to {
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
   .create-project:hover {
     background: #5173a0;
+
+    svg {
+      animation: movePlus 0.2s;
+    }
   }
 `;

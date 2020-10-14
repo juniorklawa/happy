@@ -17,13 +17,19 @@ const ProjectsMap: React.FC = () => {
           <header>
             <img src={mapMarkerImg} alt="happy" />
 
-            <h2>Escolha um projeto no mapa</h2>
-            <p>Alguém está à sua espera!</p>
+            <h2>Escolha um projeto no mapa ou clique no botão abaixo</h2>
+            <Link to="/list" className="enter-projects-list">
+              Ver lista completa de projetos
+            </Link>
           </header>
 
           <footer>
-            <strong>Curitiba</strong>
-            <span>Paraná</span>
+            <strong>Disponibilidade apenas para:</strong>
+            <span>
+              <strong>Curitiba, </strong>Paraná
+            </span>
+            <br />
+            <span>ps: Mais lugares logo logo!</span>
           </footer>
         </aside>
 
