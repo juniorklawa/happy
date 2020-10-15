@@ -12,7 +12,7 @@ export default {
       about: project.about,
       instructions: project.instructions,
       opening_hours: project.opening_hours,
-      open_on_weekends: project.opening_hours,
+      open_on_weekends: project.open_on_weekends,
       images: imagesView.renderMany(project.images),
     };
   },
