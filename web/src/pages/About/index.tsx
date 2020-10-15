@@ -9,7 +9,7 @@ const About: React.FC = () => {
       <Sidebar />
 
       <Content>
-        <p>Sobre nós</p>
+        <p className="page-title">Sobre nós</p>
 
         <section>
           <h1>Como surgiu o ---?</h1>

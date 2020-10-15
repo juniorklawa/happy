@@ -9,16 +9,16 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  p {
+  .page-title {
     color: #8fa7b2;
     text-align: center;
     font-size: 18px;
-    padding: 40px 0;
+    padding: 40px 0 26px 0;
   }
 
   section {
     width: 800px;
-    margin: 0 auto;
+    margin: 24px auto;
     padding: 64px;
     border-radius: 20px;
 
@@ -27,16 +27,16 @@ export const Content = styled.div`
     color: #4d6f80;
 
     h1 {
-      margin-bottom: 64px;
+      margin-bottom: 24px;
       padding-bottom: 8px;
       border-bottom: 1px solid #d3e2e5;
     }
 
     p {
-      margin: 24px 0;
-
+      margin: 40px 0;
       font-size: 18px;
       line-height: 28px;
+      text-align: left;
 
       a {
         color: #5173a0;
