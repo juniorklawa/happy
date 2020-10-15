@@ -9,6 +9,8 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: linear-gradient(#83c5be, #aed9e0);
 `;
 
 export const Content = styled.div`
