@@ -4,25 +4,25 @@ export const Content = styled.div`
   position: fixed;
   height: 100%;
   padding: 32px 24px;
-  background: linear-gradient(329.54deg, #15b6d6 0%, #15d6d6 100%);
+  background: linear-gradient(#83c5be, #aed9e0);
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 
   img {
     width: 48px;
   }
 
-  footer a,
-  footer button {
+  .back-button a,
+  button {
     width: 48px;
     height: 48px;
 
     border: 0;
+    outline: none;
 
-    background: #12afcb;
+    background: #3d5a80;
     border-radius: 16px;
 
     cursor: pointer;
@@ -32,10 +32,41 @@ export const Content = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 16px;
   }
 
-  footer a:hover,
-  footer button:hover {
-    background: #17d6eb;
+  .back-button a:hover,
+  button:hover {
+    background: #5173a0;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 24px;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color 0.2s;
+
+    svg {
+      margin-bottom: 4px;
+      color: '#fff';
+    }
+  }
+
+  .menu-item:hover {
+    color: #3d5a80;
+    transition: color 0.2s;
+
+    svg {
+      color: #3d5a80;
+      transition: color 0.2s;
+    }
   }
 `;
