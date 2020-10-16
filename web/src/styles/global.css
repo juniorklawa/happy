@@ -10,7 +10,7 @@ body {
   background: #f5f8fa;
 }
 
-body, input, button, textarea {
+body, input, button, textarea, select {
   font: 600 18px Nunito, sans-serif;
 }
 
