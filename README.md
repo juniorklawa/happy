@@ -59,6 +59,6 @@ $ yarn start <br/>
     <h2>:pencil:</a> License </h2>
     <p>This project is under the MIT license. See the <a href="https://github.com/gisabernardess/happy/blob/main/LICENSE" rel="nofollow">LICENSE</a> for more information.</p> -->
     <hr>
-    <p>Made by Guilherme Illescas :wave: <a href="https://www.linkedin.com/in/gisabernardess/" rel="nofollow">Get in touch!</a></p>
+    <p>Made by Guilherme Illescas :wave: <a href="https://www.linkedin.com/in/guilherme-illescas/" rel="nofollow">Get in touch!</a></p>
   </article>
 </div>
