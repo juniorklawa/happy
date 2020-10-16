@@ -9,7 +9,7 @@ export const Content = styled.div`
   }
 
   .orphanage-details {
-    width: 700px;
+    width: 800px;
     margin: 64px auto;
 
     background: #ffffff;
@@ -144,6 +144,15 @@ export const Content = styled.div`
     background: linear-gradient(154.16deg, #edfff6 7.85%, #ffffff 91.03%);
     border: 1px solid #a1e9c5;
     color: #37c77f;
+  }
+
+  .orphanage-details
+    .orphanage-details-content
+    .open-details
+    div.open-on-weekends.dont-open {
+    background: linear-gradient(154.16deg, #fdf0f5 7.85%, #ffffff 91.03%);
+    border: 1px solid #ffbcd4;
+    color: #ff6690;
   }
 
   .orphanage-details .orphanage-details-content button.contact-button {
