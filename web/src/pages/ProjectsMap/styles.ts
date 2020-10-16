@@ -10,6 +10,8 @@ export const Content = styled.div`
 
   display: flex;
 
+  background: linear-gradient(#83c5be, #aed9e0);
+
   aside {
     width: 420px;
     padding: 80px;
