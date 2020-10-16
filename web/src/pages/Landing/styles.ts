@@ -50,7 +50,7 @@ export const Content = styled.div`
     position: absolute;
     right: 0;
     top: 0;
-    margin-top: 32px;
+    margin-top: 26px;
     margin-right: 40px;
 
     font-size: 18px;
