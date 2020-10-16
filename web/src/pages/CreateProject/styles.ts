@@ -7,8 +7,8 @@ export const Content = styled.div`
     flex: 1;
   }
 
-  form.create-orphanage-form {
-    width: 700px;
+  form.create-project-form {
+    width: 800px;
     margin: 64px auto;
 
     background: #ffffff;
@@ -20,15 +20,21 @@ export const Content = styled.div`
     overflow: hidden;
   }
 
-  form.create-orphanage-form fieldset {
+  form.create-project-form .leaflet-container {
+    margin-bottom: 40px;
+    border: 1px solid #d3e2e5;
+    border-radius: 20px;
+  }
+
+  form.create-project-form fieldset {
     border: 0;
   }
 
-  form.create-orphanage-form fieldset + fieldset {
+  form.create-project-form fieldset + fieldset {
     margin-top: 80px;
   }
 
-  form.create-orphanage-form fieldset legend {
+  form.create-project-form fieldset legend {
     width: 100%;
 
     font-size: 32px;
@@ -41,26 +47,28 @@ export const Content = styled.div`
     padding-bottom: 24px;
   }
 
-  form.create-orphanage-form .input-block + .input-block {
+  form.create-project-form .input-block + .input-block {
     margin-top: 24px;
   }
 
-  form.create-orphanage-form .input-block label {
+  form.create-project-form .input-block label,
+  form.create-project-form .mapTip {
     display: flex;
     color: #8fa7b3;
     margin-bottom: 8px;
     line-height: 24px;
   }
 
-  form.create-orphanage-form .input-block label span {
+  form.create-project-form .input-block label span {
     font-size: 14px;
     color: #8fa7b3;
     margin-left: 24px;
     line-height: 24px;
   }
 
-  form.create-orphanage-form .input-block input,
-  form.create-orphanage-form .input-block textarea {
+  form.create-project-form .input-block input,
+  form.create-project-form .input-block textarea,
+  form.create-project-form .input-block select {
     width: 100%;
     background: #f5f8fa;
     border: 1px solid #d3e2e5;
@@ -69,12 +77,13 @@ export const Content = styled.div`
     color: #5c8599;
   }
 
-  form.create-orphanage-form .input-block input {
+  form.create-project-form .input-block input,
+  form.create-project-form .input-block select {
     height: 64px;
     padding: 0 16px;
   }
 
-  form.create-orphanage-form .input-block textarea {
+  form.create-project-form .input-block textarea {
     min-height: 120px;
     max-height: 240px;
     resize: vertical;
@@ -82,21 +91,41 @@ export const Content = styled.div`
     line-height: 28px;
   }
 
-  form.create-orphanage-form .input-block .new-image {
+  form.create-project-form .input-block .images-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 16px;
+  }
+
+  form.create-project-form .input-block .images-container img {
     width: 100%;
-    height: 64px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  form.create-project-form .input-block .images-container .new-image {
+    height: 96px;
     background: #f5f8fa;
     border: 1px dashed #96d2f0;
     border-radius: 20px;
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  form.create-orphanage-form .input-block .button-select {
+  form.create-project-form .input-block input[type='file'] {
+    display: none;
+  }
+
+  form.create-project-form .input-block .button-select {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  form.create-orphanage-form .input-block .button-select button {
+  form.create-project-form .input-block .button-select button {
     height: 64px;
     background: #f5f8fa;
     border: 1px solid #d3e2e5;
@@ -104,22 +133,22 @@ export const Content = styled.div`
     cursor: pointer;
   }
 
-  form.create-orphanage-form .input-block .button-select button.active {
+  form.create-project-form .input-block .button-select button.active {
     background: #edfff6;
     border: 1px solid #a1e9c5;
     color: #37c77f;
   }
 
-  form.create-orphanage-form .input-block .button-select button:first-child {
+  form.create-project-form .input-block .button-select button:first-child {
     border-radius: 20px 0px 0px 20px;
   }
 
-  form.create-orphanage-form .input-block .button-select button:last-child {
+  form.create-project-form .input-block .button-select button:last-child {
     border-radius: 0 20px 20px 0;
     border-left: 0;
   }
 
-  form.create-orphanage-form button.confirm-button {
+  form.create-project-form button.confirm-button {
     margin-top: 64px;
 
     width: 100%;
@@ -138,11 +167,11 @@ export const Content = styled.div`
     transition: background-color 0.2s;
   }
 
-  form.create-orphanage-form button.confirm-button svg {
+  form.create-project-form button.confirm-button svg {
     margin-right: 16px;
   }
 
-  form.create-orphanage-form button.confirm-button:hover {
+  form.create-project-form button.confirm-button:hover {
     background: #36cf82;
   }
 `;
