@@ -1,6 +1,6 @@
 <div id="readme" class="Box-body readme blob js-code-block-container">
   <article class="markdown-body entry-content p-3 p-md-6" itemprop="text">
-    <p align="center"><img alt="Happy" src="./web/src/images/logo.svg"></p>
+    <p align="center"><img alt="Happy" src="./web/src/images/logo-blue.svg"></p>
     <p align="center">Encontre projetos sociais perto de você, ou onde você desejar</p>
     <hr>
     <!-- <p align="center">
