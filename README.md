@@ -21,7 +21,7 @@
     </ul>
     <p>You can view the layout of the project through this <a href="https://www.figma.com/files/project/12806129/Happy" rel="nofollow">link</a>. You need to have a <a href="https://www.figma.com/" rel="nofollow">Figma</a> account to access it.</p>
     <br>
-    <h2>🚀</a> How to use </h2>
+    <h2>ℹ️</a> How to use </h2>
     <p>To clone and run this application, you'll need <a href="https://git-scm.com" rel="nofollow">Git</a> and  <a href="https://legacy.yarnpkg.com" rel="nofollow">Yarn</a>. </p><p>Go to an folder directory that you want to download the project. From your command line:</p>
     <div class="highlight highlight-source-shell">
       <pre><span class="pl-c"><span class="pl-c">#</span> Clone this repository, typing:</span>
