@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Content = styled.div`
   position: fixed;
+  max-width: 130px;
   height: 100%;
   padding: 32px 24px;
   background: linear-gradient(#83c5be, #aed9e0);
@@ -46,8 +47,9 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
-    margin-top: 24px;
+    margin-top: 32px;
 
     color: #fff;
     text-decoration: none;

@@ -1,5 +1,11 @@
 import React from 'react';
-import { FiArrowLeft, FiAlignJustify, FiMap, FiInfo } from 'react-icons/fi';
+import {
+  FiArrowLeft,
+  FiAlignJustify,
+  FiMap,
+  FiInfo,
+  FiPlus,
+} from 'react-icons/fi';
 import { Link, useHistory } from 'react-router-dom';
 
 // import mapMarkerImg from '../../images/map-marker.svg';
@@ -25,6 +31,11 @@ const Sidebar: React.FC = () => {
       <Link to="/projects" className="menu-item">
         <FiAlignJustify className="icon" size={24} />
         Projetos
+      </Link>
+
+      <Link to="/projects/create" className="menu-item">
+        <FiPlus className="icon" size={24} />
+        Cadastrar Projeto
       </Link>
 
       <Link to="/about" className="menu-item">
