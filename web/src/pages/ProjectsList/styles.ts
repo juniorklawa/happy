@@ -20,21 +20,77 @@ export const Content = styled.div`
   }
 
   section {
-    height: 500px;
     background: #fff;
     border-radius: 20px;
+
+    padding: 32px 0;
+
+    a {
+      text-decoration: none;
+
+      img {
+        object-fit: cover;
+      }
+    }
   }
 
   form {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 
+    padding: 32px;
+
+    .input-block {
+      flex: 1;
+    }
+
+    .input-block label,
+    .input-block span {
+      display: flex;
+      margin-bottom: 8px;
+
+      color: #8fa7b3;
+      line-height: 24px;
+    }
+
+    .input-block select {
+      width: 100%;
+      height: 48px;
+      padding: 0 16px;
+
+      background: #f5f8fa;
+      border: 1px solid #d3e2e5;
+      color: #5c8599;
+
+      border-radius: 20px;
+      outline: none;
+
+      cursor: pointer;
+    }
+
     button {
-      border: 0;
-      width: 120px;
-      border-radius: 16px;
-      outline: 0;
+      bottom: 0;
+      width: 150px;
+      height: 48px;
+
+      background: #f5f8fa;
+      border: 1px solid #d3e2e5;
+      outline: none;
+      color: #5c8599;
+
+      border-radius: 20px;
+      padding: 0 16px;
+      margin-left: 32px;
+
+      cursor: pointer;
+
+      transition: all 0.2s;
+    }
+
+    button:hover {
+      background: #d3e2e5;
+      border: 1px solid #5c8599;
     }
   }
 `;
