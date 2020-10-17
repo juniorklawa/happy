@@ -33,6 +33,7 @@ export default {
     const {
       name,
       category,
+      whatsapp,
       latitude,
       longitude,
       about,
@@ -52,18 +53,20 @@ export default {
     const data = {
       name,
       category,
+      whatsapp,
       latitude,
       longitude,
       about,
       instructions,
       opening_hours,
-      open_on_weekends,
+      open_on_weekends: open_on_weekends === 'true',
       images,
     };
 
     const schema = Yup.object().shape({
       name: Yup.string().required(),
       category: Yup.string().required(),
+      whatsapp: Yup.string().required(),
       latitude: Yup.number().required(),
       longitude: Yup.number().required(),
       about: Yup.string().required().max(300),
@@ -86,5 +89,17 @@ export default {
     await projectsRepository.save(project);
 
     response.status(201).json(project);
+  },
+
+  async showByCategory(request: Request, response: Response) {
+    const { category } = request.params;
+
+    const projectsRepository = getRepository(Project);
+
+    const projects = await projectsRepository.findOne({
+      where: { category },
+    });
+
+    return response.json(projects);
   },
 };
