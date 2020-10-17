@@ -7,6 +7,7 @@ export default {
       id: project.id,
       name: project.name,
       category: project.category,
+      whatsapp: project.whatsapp,
       latitude: project.latitude,
       longitude: project.longitude,
       about: project.about,

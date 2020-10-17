@@ -20,6 +20,9 @@ export default class Project {
   category: string;
 
   @Column()
+  whatsapp: string;
+
+  @Column()
   latitude: number;
 
   @Column()
