@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import { Map, Marker, TileLayer } from 'react-leaflet';
 import { LeafletMouseEvent } from 'leaflet';
 import { FiPlus } from 'react-icons/fi';
+import NumberFormat from 'react-number-format';
 import api from '../../services/api';
 
 import Sidebar from '../../components/Sidebar';
@@ -19,6 +20,7 @@ const CreateProject: React.FC = () => {
 
   const [name, setName] = useState('');
   const [category, setCategory] = useState('');
+  const [whatsapp, setWhatsapp] = useState('');
   const [about, setAbout] = useState('');
   const [instructions, setInstructions] = useState('');
   const [opening_hours, setOpening_hours] = useState('');
@@ -59,8 +61,9 @@ const CreateProject: React.FC = () => {
     const data = new FormData();
 
     data.append('name', name);
-    data.append('about', about);
     data.append('category', category);
+    data.append('whatsapp', whatsapp);
+    data.append('about', about);
     data.append('latitude', String(latitude));
     data.append('longitude', String(longitude));
     data.append('instructions', instructions);
@@ -136,6 +139,20 @@ const CreateProject: React.FC = () => {
             </div>
 
             <div className="input-block">
+              <label htmlFor="whatsapp">
+                WhatsApp <span>Digite um número de celular válido</span>
+              </label>
+              <NumberFormat
+                value={whatsapp}
+                id="name"
+                format="(##) #####-####"
+                allowEmptyFormatting
+                mask="_"
+                onChange={e => setWhatsapp(e.target.value)}
+              />
+            </div>
+
+            <div className="input-block">
               <label htmlFor="about">
                 Sobre <span>Máximo de 300 caracteres</span>
               </label>
@@ -203,7 +220,7 @@ const CreateProject: React.FC = () => {
                 </button>
                 <button
                   type="button"
-                  className={!open_on_weekends ? 'active' : ''}
+                  className={!open_on_weekends ? 'delete-active' : ''}
                   onClick={() => setOpen_on_weekends(false)}
                 >
                   Não

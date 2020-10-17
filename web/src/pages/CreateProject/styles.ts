@@ -131,12 +131,19 @@ export const Content = styled.div`
     border: 1px solid #d3e2e5;
     color: #5c8599;
     cursor: pointer;
+    outline: none;
   }
 
   form.create-project-form .input-block .button-select button.active {
     background: #edfff6;
     border: 1px solid #a1e9c5;
     color: #37c77f;
+  }
+
+  form.create-project-form .input-block .button-select button.delete-active {
+    background: #ffcad4;
+    border: 1px solid #ff9690;
+    color: #ff6690;
   }
 
   form.create-project-form .input-block .button-select button:first-child {
